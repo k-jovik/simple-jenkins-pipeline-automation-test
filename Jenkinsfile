@@ -4,7 +4,7 @@ node {
         checkout scm
     }
     stage('Build image') {
-       app = docker.build("kjovik/simple-jenkins-pipeline-automation-test")
+       app = docker.build("kikodocker2004/simple-jenkins-pipeline-automation-test")
     }
     stage('Push image') {   
         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
