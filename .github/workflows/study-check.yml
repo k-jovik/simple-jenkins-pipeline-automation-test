@@ -1,0 +1,11 @@
+name: Student Exercise Run
+on: [push]
+jobs:
+  build-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello World"
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing..."
